@@ -2,8 +2,6 @@ defmodule StreamerTest do
   use ExUnit.Case, async: true
   doctest Streamer
 
-  # alias Streamer.m3u8
-
   @index_file "test/fixtures/9af0270acb795f9dcafb5c51b1907628.m3u8"
   @first_m3u8_file "test/fixtures/8bda35243c7c0a7fc69ebe1383c6464c.m3u8"
 
