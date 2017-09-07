@@ -18,5 +18,8 @@ defmodule StreamerTest do
   test "extracts m3u8 files from a given index file" do
     m3u8s = Streamer.extract_m3u8_files(@index_file)
     assert Enum.at(m3u8s, 0) == Streamer.m3u8(program_id: 1, path: @first_m3u8_file, bandwidth: 110000)
+
+    # should find all m3u8 files inside an index file
+    assert length(m3u8s) == 5
   end
 end
